@@ -5,6 +5,13 @@ app_description = "A coworking space booking system"
 app_email = "swathikagopinath0609@gmail.com"
 app_license = "mit"
 
+fixtures = [
+    {
+        "dt": "Resource",
+        "filters": [["name","in",["Room A","Room B","Hot Desk Zone"]]]
+    }
+]
+
 # Apps
 # ------------------
 

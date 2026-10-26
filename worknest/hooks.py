@@ -9,6 +9,10 @@ fixtures = [
     {
         "dt": "Resource",
         "filters": [["name","in",["Room A","Room B","Hot Desk Zone"]]]
+    },
+    {
+        "dt": "Resource Type",
+        "filters": [["name","in",["Meeting Room","Hot Desk Zone","Phone Booth"]]]
     }
 ]
 

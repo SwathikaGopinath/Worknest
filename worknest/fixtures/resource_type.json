@@ -1,0 +1,23 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Resource Type",
+  "modified": "2026-10-26 15:10:47.898093",
+  "name": "Meeting Room",
+  "resource_type_name": "Meeting Room"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Resource Type",
+  "modified": "2026-10-26 15:11:02.071144",
+  "name": "Hot Desk Zone",
+  "resource_type_name": "Hot Desk Zone"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Resource Type",
+  "modified": "2026-10-26 15:11:11.696641",
+  "name": "Phone Booth",
+  "resource_type_name": "Phone Booth"
+ }
+]

@@ -11,6 +11,16 @@ cd $PATH_TO_YOUR_BENCH
 bench get-app $URL_OF_THIS_REPO --branch version-16
 bench install-app worknest
 ```
+### Child Table Internals
+
+1. **Database table name:** `tabBooking Add-on Entry`.  
+   Frappe stores each DocType's records in its own database table.
+
+2. **Automatically set columns:** `parent`, `parenttype`, `parentfield`, and `idx`.  
+   `parent` identifies the parent document, `parenttype` identifies its DocType, `parentfield` identifies the child-table field, and `idx` records the row's position. `parenttype` is needed because different DocTypes can have parent documents with the same name.
+
+3. **Deleting a row:** After saving, the deleted child row is removed from the database, and the remaining rows' `idx` values are renumbered sequentially. The surviving rows retain their `name` values.  
+   **Why:** `name` identifies a row, while `idx` represents its position, so `idx` should not be used to remember a specific row between saves.
 
 ### Contributing
 
